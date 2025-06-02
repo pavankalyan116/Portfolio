@@ -1,0 +1,167 @@
+/* Dark background for the whole app */
+body, .section-bg-home {
+  background: #141414 !important;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Navbar styles */
+.custom-navbar {
+  background: transparent;
+  border-bottom: none;
+  box-shadow: none;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.custom-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin: 0 1.5rem;
+  position: relative;
+  transition: color 0.2s;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 0.2rem;
+}
+
+.custom-nav .nav-link.active,
+.custom-nav .nav-link:hover {
+  color: #ad06ff !important;
+  border-bottom: 3px solid #ad06ff;
+  background: none;
+}
+
+/* Profile image with purple glow */
+.profile-img-glow {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 40px 8px #ad06ff, 0 0 0 8px #222;
+  border: 6px solid #222;
+  background: #222;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.profile-img-glow:hover {
+  box-shadow: 0 0 60px 16px #ad06ff, 0 0 0 8px #222;
+  transform: scale(1.03);
+}
+
+/* Home Section */
+.section-bg-home {
+  background: #111;
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.home-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Home Content */
+.home-content h1,
+.home-content h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #fff;
+}
+
+.home-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.home-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-content span {
+  color: #ad06ff;
+}
+
+.home-content p {
+  color: #ccc;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-bottom: 2rem;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #ad06ff;
+  border-radius: 50%;
+  color: #ad06ff;
+  font-size: 2rem;
+  background: transparent;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.icon-btn:hover {
+  background: #ad06ff;
+  color: #fff;
+  box-shadow: 0 0 10px #ad06ff;
+  text-decoration: none;
+}
+
+/* Custom Outlined Button */
+.btn-outline-custom {
+  border: 2px solid #ad06ff;
+  color: #ad06ff;
+  background: transparent;
+  border-radius: 30px;
+  font-size: 1.4rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  padding: 0.8rem 2.5rem;
+  margin-top: 1rem;
+}
+
+.btn-outline-custom:hover {
+  background: #ad06ff;
+  color: #fff;
+  box-shadow: 0 0 10px #ad06ff;
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+  .section-bg-home {
+    flex-direction: column;
+    padding-top: 8rem;
+  }
+  .home-img img,
+  .profile-img-glow {
+    width: 220px;
+    height: 220px;
+  }
+  .home-content h1 {
+    font-size: 2.5rem;
+  }
+  .home-content h2 {
+    font-size: 1.5rem;
+  }
+}

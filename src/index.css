@@ -1,3 +1,4 @@
+
 /* ====== Base Styles ====== */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
@@ -63,35 +64,6 @@ nav a:hover,
 nav a.active {
     color: #ad06ff;
     border-bottom: 3px solid #ad06ff;
-}
-
-@media (max-width: 995px) {
-    nav {
-        position: absolute;
-        display: none;
-        top: 0;
-        right: 0;
-        width: 40%;
-        border-left: 3px solid #ad06ff;
-        border-bottom: 3px solid #ad06ff;
-        border-bottom-left-radius: 2rem;
-        padding: 1rem;
-        background-color: #161616;
-    }
-    nav.active {
-        display: block;
-    }
-    nav a {
-        display: block;
-        font-size: 2rem;
-        margin: 3rem 0;
-    }
-    nav a:hover,
-    nav a.active {
-        padding: 1rem;
-        border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #ad06ff;
-    }
 }
 
 /* ====== Section General ====== */
@@ -223,9 +195,6 @@ span {
     transition: background 0.3s, color 0.3s;
     position: relative;
     overflow: hidden;
-    animation: fadeInUp 1s both;
-    animation-delay: 0.2s;
-    box-shadow: 0 2px 12px #b74b4b22;
 }
 
 .skill-item:hover {
@@ -244,31 +213,6 @@ span {
 .skill-item:hover .skill-gif {
     transform: scale(1.2) rotate(-10deg);
     filter: drop-shadow(0 0 10px #ad06ff);
-}
-
-.skill-gif.spin {
-    animation: spin 3s linear infinite;
-}
-@keyframes spin {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);}
-}
-.skill-gif.pulse {
-    animation: pulse 2s infinite;
-}
-@keyframes pulse {
-    0%, 100% { filter: brightness(1);}
-    50% { filter: brightness(1.5);}
-}
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* ====== Education Section ====== */
@@ -390,8 +334,6 @@ span {
     margin-right: 1rem;
 }
 
-
-
 /* ====== Certificates Section ====== */
 .certificates {
     padding: 60px 0;
@@ -442,68 +384,6 @@ span {
 
 .section-bg-certificates {
     background: #111;
-}
-
-@media (max-width: 800px) {
-    .certificates-list {
-        flex-direction: column;
-        align-items: center;
-    }
-    .certificate-item {
-        width: 90%;
-        min-width: unset;
-        max-width: unset;
-    }
-}
-
-
-
-
-/* ====== Typing Animation ====== */
-.typing-text{
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
-.typing-text span{
-    position: relative;
-}
-.typing-text span::before{
-    content: "software Developer";
-    color: #ad06ff;
-    animation: words 20s infinite;
-}
-.typing-text span::after{
-    content: "";
-    background-color: black;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid black;
-    right: -8;
-    animation: cursor 0.6s infinite;
-}
-@keyframes cursor{
-    to{
-        border-left: 3px solid #ad06ff;
-    }
-}
-@keyframes words{
-    0%, 20%{
-        content: "Web Developer";
-    }
-    21%, 40%{
-        content: "Developer";
-    }
-    41%, 60%{
-        content: "Web Designer";
-    }
-    61%, 80%{
-        content: "Content Creator";
-    }
-    81%, 100%{
-        content: "  Writer";
-    }
 }
 
 /* ====== Responsive Design ====== */

@@ -8,8 +8,7 @@ import Contact from './assets/components/Contact'
 import './App.css'
 import './index.css';
 
-// Import the image if it's in src/assets/images/
-import myPic from './assets/images/my-pic.jpg';
+
 
 const App = () => {
   return (
@@ -49,7 +48,7 @@ const App = () => {
       <section className="home section-bg-home py-5" id="home">
         <div className="container d-flex flex-column flex-md-row align-items-center justify-content-center">
           <div className="home-img mb-4 mb-md-0 me-md-5 text-center">
-            <img src={myPic} alt="Profile" className="profile-img-glow" />
+            <img src="/images/my-pic.jpg" alt="Profile" className="profile-img-glow" />
           </div>
           <div className="home-content text-center text-md-start">
             <h1 className="fw-bold" style={{ fontSize: "3rem", color: "#fff" }}>
